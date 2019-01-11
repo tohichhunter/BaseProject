@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.MainFragment"
+        android:background="@color/colorDarkBlue">
+
+    <RelativeLayout
+            android:id="@+id/rlByRegionLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+        <ImageView
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp"
+                android:id="@+id/ivMainFragmentByRegionImage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkBlue"
+                android:cropToPadding="true"
+                android:src="@drawable/flag"/>
+
+        <TextView
+                android:id="@+id/tvMainFragmentByRegionText"
+                style="@style/QuickSandBold.White.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="130dp"
+                android:layout_toEndOf="@id/ivMainFragmentByRegionImage"
+                android:paddingEnd="50dp"
+                android:text="@string/countries_by_region"/>
+    </RelativeLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="5dp"
+          android:background="@color/colorWhite"/>
+
+    <RelativeLayout
+            android:id="@+id/rlAllLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+        <ImageView
+                android:paddingTop="100dp"
+                android:paddingBottom="100dp"
+                android:id="@+id/ivMainFragmentAllCountriesImage"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDarkBlue"
+                android:src="@drawable/ic_worldwide"/>
+
+        <TextView
+                android:id="@+id/tvMainFragmentAllCountriesText"
+                style="@style/QuickSandBold.White.18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="130dp"
+                android:layout_toEndOf="@id/ivMainFragmentAllCountriesImage"
+                android:text="@string/all_countries"/>
+    </RelativeLayout>
+</LinearLayout>
